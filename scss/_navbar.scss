@@ -5,13 +5,18 @@
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    max-width: 100%;
+    height: 4rem;
+    display: block;
     font-weight: 700;
     text-transform: uppercase;
-    color: $primary;
+    color: $white;
     @include sans-serif-font;
     &:focus,
     &:hover {
-      color: darken($primary, .1);
+      color: $white;
     }
   }
   .navbar-nav {
@@ -23,7 +28,7 @@
         text-transform: uppercase;
         color: $gray-900;
         &:hover {
-          color: $primary;
+          color: $white;
         }
         &.active {
           color: $primary !important;
@@ -39,10 +44,15 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      background-image: url("../img/logo.png");
+      background-size: cover;
+      max-width: 100%;
+      height: 4rem;
+      display: block;
+      color: $white;
       &:focus,
       &:hover {
-        color: $white;
+        color: $primary;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -50,9 +60,9 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      color: $white;
       &:hover {
-        color: $white;
+        color: $primary;
       }
     }
     &.navbar-shrink {
@@ -62,16 +72,20 @@
         color: $primary;
         &:focus,
         &:hover {
-          color: darken($primary, .1);
+          color: $primary;
         }
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: $gray-900;
+        color: $white;
         &:hover {
           color: $primary;
         }
       }
     }
+  }
+  .a-logo {
+    width: 7.5rem;
+    color: #FFF;
   }
 }
