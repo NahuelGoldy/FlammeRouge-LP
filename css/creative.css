@@ -71,6 +71,9 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #212529; }
 
+.devicons {
+  font-size: 5rem; }
+
 #mainNav {
   padding: 1rem;
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -181,6 +184,9 @@ header.masthead {
 
 .service-box {
   max-width: 400px; }
+
+p {
+  font-size: 0.9rem; }
 
 .portfolio-box {
   position: relative;
@@ -299,3 +305,5 @@ section#contact {
     text-transform: none; }
   .team-member p {
     margin-top: 0; }
+  .team-member .icn-size {
+    font-size: 1.75rem; }
