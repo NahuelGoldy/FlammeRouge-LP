@@ -370,8 +370,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate action="https://formspree.io/nahuelsg.64@gmail.com"
-      method="POST">
+            <form id="contactForm" name="sentMessage" novalidate action="https://mailthis.to/nahuelsg.64@gmail.com" method="POST" encType="multipart/form-data">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -393,8 +392,10 @@
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
-                <input type="hidden" name="_next" value="//nahuelgoldy.info" />
-                <input class="hidden" type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Contact form submitted">
+                <input type="hidden" name="_after" value="http://www.nahuelgoldy.info/">
+                <input type="hidden" name="_honeypot" value="">
+                <input type="hidden" name="_confirmation" value="">
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
